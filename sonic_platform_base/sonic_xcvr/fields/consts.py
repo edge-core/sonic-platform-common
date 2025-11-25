@@ -55,6 +55,7 @@ TX_FAULT_FIELD = "TxFault"
 TX_FAULT_SUPPORT_FIELD = "TxFaultSupported"
 TX_DISABLE_FIELD = "TxDisable"
 TX_DISABLE_SUPPORT_FIELD = "TxDisableSupported"
+TX_TUNABLE_SUPPORT_FIELD = "TxTunableSupported"
 
 TX_POWER_FIELD = "TxPower"
 TX_POWER_SUPPORT_FIELD = "TxPowerSupported"

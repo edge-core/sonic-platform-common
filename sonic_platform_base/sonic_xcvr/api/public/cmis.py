@@ -779,6 +779,14 @@ class CmisApi(XcvrApi):
         duration = self.xcvr_eeprom.read(consts.MODULE_PWRDN_DURATION)
         return float(duration) if duration is not None else 0
 
+    def is_tx_tunable(self):
+        '''
+        Returns True if transmitter is tunable(Page04h and 12h supported)
+        '''
+        if self.is_flat_memory():
+            return False
+        return self.xcvr_eeprom.read(consts.TX_TUNABLE_SUPPORT_FIELD)
+
     def get_host_lane_count(self):
         '''
         This function returns number of host lanes for default application
