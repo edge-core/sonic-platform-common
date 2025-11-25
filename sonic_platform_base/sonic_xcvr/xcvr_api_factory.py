@@ -85,7 +85,7 @@ class XcvrApiFactory(object):
                 xcvr_eeprom = XcvrEeprom(self.reader, self.writer, mem_map)
                 api = CmisApi(xcvr_eeprom)
 
-            if api.is_coherent_module():
+            if api.is_tx_tunable():
                 mem_map = CCmisMemMap(codes)
                 xcvr_eeprom = XcvrEeprom(self.reader, self.writer, mem_map)
                 api = CCmisApi(xcvr_eeprom)
