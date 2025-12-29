@@ -267,7 +267,8 @@ class Sff8024(XcvrCodes):
         80: '400GAUI-4-L C2M (Annex 120G)',
         81: '800G S C2M (placeholder)',
         82: '800G L C2M (placeholder)',
-        83: 'OTL4.2'
+        83: 'OTL4.2',
+       255: 'End'
     }
 
     # MMF media interface IDs
@@ -387,7 +388,12 @@ class Sff8024(XcvrCodes):
         84: 'FOIC2.4-DO (G.709.3/Y.1331.3)',
         85: '400GBASE-DR4-2 (placeholder)',
         86: '800GBASE-DR8 (placeholder)',
-        87: '800GBASE-DR8-2 (placeholder)'
+        87: '800GBASE-DR8-2 (placeholder)',
+        102: 'FLEXO-8e-DO-16QAM/FOIC8e.8-DO',
+        151: "100G-DR1-LPO",
+        152: "200G-DR2-LPO",
+        153: "400G-DR4-LPO",
+        154: "800G-DR8-LPO",
     }
 
     # Passive and Linear Active Copper Cable and Passive Loopback media interface codes
